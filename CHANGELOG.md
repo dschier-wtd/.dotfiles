@@ -17,6 +17,7 @@ This file is the changelog of [REPO_NAME](https://github.com/whiletruedoio/REPO_
 - Added: VIM settings
 - Added: Ansible settings
 - Added: cirrus pipeline
+- Activated: cirrus pipeline
 
 ## [MAJOR.MINOR.PATCH-LABEL] - YYYYMMDD
 
