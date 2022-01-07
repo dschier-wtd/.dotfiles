@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# save multiline commands in one history line
+shopt -s cmdhist
+# append instead of overwrite
+shopt -s histappend
+
+# Tweak history size, dups and ignores
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL="ignorespace:ignoreboth:erasedups"
+export HISTIGNORE="history:ls"
+
+# Immediately append commands to the history
+PROMPT_COMMAND="history -a;${PROMPT_COMMAND}"

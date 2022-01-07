@@ -1,0 +1,6 @@
+# ssh client configuration
+# reference: `man 5 ssh config`
+
+Host *
+  ForwardAgent yes
+  Compression yes

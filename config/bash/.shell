@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Shell options
+
+# cd without cd
+shopt -s autocd
+# check if background job is running before exiting
+shopt -s checkjobs
+# check window size and resize
+shopt -s checkwinsize
+# autocorrect minor spelling errors
+shopt -s cdspell
+# bash attempts spelling correction
+shopt -s dirspell
+# include leading dot-files/dirs
+shopt -s dotglob

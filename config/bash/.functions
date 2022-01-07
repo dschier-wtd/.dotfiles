@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+# Simple todo "application"
+todo() {
+    local TODO_PATH
+    TODO_PATH="${HOME}/Documents/TODO.md"
+    local SUBCMD
+    SUBCMD="$1"
+
+    if [ ! -f "${TODO_PATH}" ]; then
+        echo "No file ${TODO_PATH} found. Creating one."
+        touch "${TODO_PATH}"
+    fi
+
+    case "${SUBCMD}" in
+        help)
+            echo "The todo function is a very simple way to maintain a ToDO in"
+            echo "markdown. It supports some arguments:"
+            echo ""
+            echo "list) to list the ToDos"
+            echo "edit) to edit the ToDos with your default editor"
+            echo ""
+            ;;
+
+        edit)
+            "${EDITOR}" "${TODO_PATH}"
+            ;;
+        list|*)
+            echo "Open ToDos:"
+            echo ""
+            cat "${TODO_PATH}"
+            echo ""
+            ;;
+    esac
+}
+
+# Show the weather
+weather() {
+    curl wttr.in/?n1F
+}
+
+calendar() {
+    echo "Calendar:"
+    echo ""
+    cal -n 3
+}
+
+today() {
+    echo "==============================================================="
+    weather
+    echo "==============================================================="
+    calendar
+    echo "==============================================================="
+    todo list
+    echo "==============================================================="
+}

@@ -1,0 +1,14 @@
+[color]
+	ui = auto
+[commit]
+	gpgsign = true
+[core]
+	editor = vi
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[user]
+	name = Daniel Schier
+	email = dschier@while-true-do.io
+	signingkey = 9CF9EAA377FB0F4C

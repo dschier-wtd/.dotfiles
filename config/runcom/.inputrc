@@ -1,0 +1,5 @@
+# Ignore cases for Tab Completion
+set completion-ignore-case on
+
+# Show all autocomplete results at once
+set page-completions off

@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# ansible
+alias a="ansible"
+alias ag="ansible-galaxy"
+alias ap="ansible-playbook"
+alias av="ansible-vault"
+
+# file operations
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+
+# git
+alias git='LANG=C git'
+
+# grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# kubectl
+
+alias k='kubectl'
+alias kg='kubectl get'
+
+alias krm='kubectl delete'
+alias krmf='kubectl delete -f'
+
+alias ka='kubectl apply -f'
+alias klo='kubectl logs -f'
+
+# ls
+alias l='ls --color=auto'
+alias l.='ls -d .* --color=auto'
+alias ll='ls -l --color=auto'
+alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
+
+# watch
+alias watch='watch -d'
