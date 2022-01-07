@@ -32,7 +32,7 @@ demonstrated in the below animation.
 The below list contains the tools that will get configured.
 
 - [Ansible](https://www.ansible.com/) (Configuration)
-- [Bash](https://www.gnu.org/software/bash/ (Aliases, Functions, Configuration)
+- [Bash](https://www.gnu.org/software/bash/) (Aliases, Functions, Configuration)
 - [Git](https://git-scm.com/) (Configuration)
 - [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) (Bash Aliases)
 - [Powerline Go](https://github.com/justjanne/powerline-go) (Bash Prompt Configuration)

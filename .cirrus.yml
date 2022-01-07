@@ -11,7 +11,7 @@ lint_markdown_task:
   container:
     image: "docker.io/library/node:latest"
   install_script: "npm install -g markdownlint-cli"
-  lint_script: "markdownlint *.md docs/*.md"
+  lint_script: "markdownlint *.md"
 
 lint_yaml_task:
   name: "Lint YAML"
