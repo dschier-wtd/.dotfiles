@@ -36,3 +36,9 @@ set smartcase
 
 " Dialog instead of a warning for unsaved changes
 set confirm
+
+" vim airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='dark'
+let g:airline_powerline_fonts = 1
+
