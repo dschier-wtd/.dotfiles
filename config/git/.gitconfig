@@ -3,7 +3,7 @@
 [commit]
 	gpgsign = true
 [core]
-	editor = vi
+	editor = vim
 [credential]
 	helper = store
 [init]
