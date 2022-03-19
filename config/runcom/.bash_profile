@@ -13,7 +13,7 @@ if [ -f "${HOME}/.bashrc" ]; then
 fi
 
 # apply .dotfiles configuration
-for file in ~/.dotfiles/system/*; do
+for file in ~/.dotfiles/config/bash/*; do
     # shellcheck source=/dev/null
     source "${file}"
 done
